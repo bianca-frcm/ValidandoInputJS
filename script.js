@@ -1,11 +1,11 @@
-function required()
-{
+function required() {
     var nome = document.getElementById('nome').value;
 
     var cb = document.getElementById('checkbox');
 
+    console.log("função required executada");
 
-    if (nome === '' && cb.checked == false){
+    if (nome === '' || cb.checked == false){
         alert("Por favor, preencha os dados");
         return false;
     }
@@ -16,6 +16,8 @@ function required()
         return true; 
     }
 }
+
+
 
 
 /*
